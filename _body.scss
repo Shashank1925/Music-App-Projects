@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 15vh;
+  background-color: white;
+}
+body.darkTheme {
+  background-color: rgb(70, 68, 68);
+  opacity: 0.4;
+}

@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 25vw;
+  height: 82vh;
+  background-color: rgb(130, 202, 71);
+  border-radius: 15px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  label {
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(7, 51, 248);
+    margin-top: 6rem;
+    margin-left: 2rem;
+  }
+  h1 {
+    font-weight: bolder;
+    font-size: x-large;
+    margin-top: 3rem;
+    margin-left: 2rem;
+  }
+}
+
+#dropdown {
+  background-color: rgb(169, 93, 240);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px sold black;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-size: larger;
+  option {
+    background-color: rgb(198, 160, 235);
+    color: rgb(58, 56, 56);
+    font-weight: bold;
+  }
+}
