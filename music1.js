@@ -28,7 +28,7 @@ const songs = [
     artist: "Harshit Saxena",
     img: "Hale Dil.jpg",
     genre: "Rock",
-    source: "Hale Dil.m4a",
+    source: "Hale-Dil.m4a",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const songs = [
     artist: "Arijit Singh",
     img: "uska hi banana.jpeg",
     genre: "Classic",
-    source: "Uska hi bnana.m4a",
+    source: "Uska-hi-bnana.m4a",
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const songs = [
     artist: "Yasser Desai",
     img: "Jitni Dafaa.jpg",
     genre: "Romantic",
-    source: "Jitni Dafaa.m4a",
+    source: "Jitni-Dafaa.m4a",
   },
 ];
 
@@ -109,6 +109,14 @@ playlistInput.style.marginLeft = "2rem";
 playlistInput.style.marginTop = "2rem";
 playlistInput.setAttribute("type", "text");
 playlistInput.setAttribute("placeholder", "   Enter Playlist Name");
+playlistInput.style.paddingLeft = "1.6rem";
+playlistInput.style.paddingRight = "1.2rem";
+playlistInput.addEventListener("keydown", (eve) => {
+  if (eve.key === "Enter") {
+    Createdlist();
+  }
+});
+
 playlistInput.style.border = "none";
 playlistInput.style.outline = "none";
 playlistInput.style.backgroundColor = "lightsalmon";
@@ -361,7 +369,8 @@ selectEl.addEventListener("click", (event) => {
 
 // third section of making playlist starts here ----
 
-createPlaylistBtn.addEventListener("click", () => {
+createPlaylistBtn.addEventListener("click", () => Createdlist());
+function Createdlist() {
   let playlistSongsArray = [];
   const playlistSongs = document.createElement("div");
   const playlistSongsHeading = document.createElement("h1");
@@ -369,6 +378,8 @@ createPlaylistBtn.addEventListener("click", () => {
   playlistSongsHeading.textContent = `${playlistInput.value} Playlist`;
   playlistSongs.style.display = "flex";
   playlistSongs.style.flexDirection = "column";
+
+  // onclicking add playlist button songs will ll be added to playlist
   addPlaylistBtn.addEventListener("click", () => {
     songs.forEach((song) => {
       if (
@@ -395,6 +406,7 @@ createPlaylistBtn.addEventListener("click", () => {
           delBtn.style.fontWeight = "bold";
           delBtn.addEventListener("click", () => {
             playlistSongs.removeChild(str);
+            playlistSongsArray.splice(song, 1);
             playlistSongs.removeChild(delBtn);
           });
           playlistSongs.appendChild(str);
@@ -473,4 +485,4 @@ createPlaylistBtn.addEventListener("click", () => {
     createParaEl.style.paddingTop = ".5rem";
   }
   playlistInput.value = "";
-});
+}
