@@ -1,11 +1,10 @@
-# 🎵 Music App 🎶
+# 🎵 Music App 
 
 A stylish and interactive **Music Player Web App** built using **JavaScript** and **SCSS**, featuring essential playback controls, genre filtering, and playlist creation capabilities.
 
 ---
 
-## 🚀 Features
-
+##
 - ▶️ **Play / Resume Music**  
 - ⏸️ **Pause / Stop Functionality**  
 - ⏩ **Forward & Backward Controls**  
@@ -16,7 +15,7 @@ A stylish and interactive **Music Player Web App** built using **JavaScript** an
 
 ---
 
-## 🛠️ Tech Stack
+## Skills
 
 | Technology     | Description                  |
 |----------------|------------------------------|
@@ -24,7 +23,5 @@ A stylish and interactive **Music Player Web App** built using **JavaScript** an
 | `SCSS`         | Modular and nested styling   |
 | `HTML`         | UI structure                 |
 
----
 
-## 📂 Project Structure
 
